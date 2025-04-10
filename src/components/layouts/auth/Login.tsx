@@ -87,7 +87,7 @@ export const Login = () => {
 
       <div className={styles.containerCheckBox}>
         <CheckboxWithText />
-        <Link to={"/"}>Забыли пароль?</Link>
+        <Link to={"/forgot-password"}>Забыли пароль?</Link>
       </div>
       <div className={styles.containerBtn}>
         <Button variant="default" onClick={logInHandler}>

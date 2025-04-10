@@ -6,6 +6,7 @@ import { NotFound } from "@/components/layouts/not-found/NotFound.tsx";
 
 import "./App.css";
 import { Layout } from "@/components/layouts/layout.tsx";
+import { ForgotPassword } from "@/components/layouts/forgot-password/ForgotPassword.tsx";
 
 export const App = () => {
   return (
@@ -15,6 +16,7 @@ export const App = () => {
           <Route index element={<Login />} />
           <Route path="app" element={<Main />} />
           <Route path="registration" element={<Registration />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
